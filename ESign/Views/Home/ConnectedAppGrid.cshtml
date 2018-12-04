@@ -1,0 +1,40 @@
+﻿@model ESign.Models.ConnectedappViewModel
+
+@{
+    ViewBag.Title = "ConnectedAppGrid";
+}
+@Html.ActionLink("ADD CONNECTED APP", "ConnectedappView", "Home")
+
+<table class="table">
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.AppName)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.IntegrationKey)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.lstConnectedapp)
+    {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.AppName)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.IntegrationKey)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
+
+</table>

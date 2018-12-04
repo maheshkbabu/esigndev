@@ -1,0 +1,68 @@
+﻿@model ESign.Models.ClientViewModel
+
+@{
+    ViewBag.Title = "ClientGridView";
+}
+
+<h2>ClientGridView</h2>
+
+@Html.ActionLink("ADD CLIENT", "ClientView", "Home")
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ClientID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClientName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PrimaryContact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WebSite)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.lstClient) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClientID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClientName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrimaryContact)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WebSite)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhoneNumber)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ClientID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ClientID }) |
+            @Html.ActionLink("Delete", "Delete", new {  id=item.ClientID })
+        </td>
+    </tr>
+}
+
+</table>

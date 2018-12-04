@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESign", "ESign\ESign.csproj", "{6332EDA7-9D0E-4D39-AA75-0301047751E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESignLibrary", "ESignLibrary\ESignLibrary.csproj", "{3F6C8A8B-6F0F-4FCC-9D11-3CBB87B4543C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6332EDA7-9D0E-4D39-AA75-0301047751E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6332EDA7-9D0E-4D39-AA75-0301047751E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6332EDA7-9D0E-4D39-AA75-0301047751E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F6C8A8B-6F0F-4FCC-9D11-3CBB87B4543C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F6C8A8B-6F0F-4FCC-9D11-3CBB87B4543C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F6C8A8B-6F0F-4FCC-9D11-3CBB87B4543C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F6C8A8B-6F0F-4FCC-9D11-3CBB87B4543C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
