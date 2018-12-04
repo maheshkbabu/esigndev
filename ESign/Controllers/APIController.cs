@@ -29,7 +29,7 @@ namespace ESign.Controllers
             mycon = "server=localhost;port=3306;database=esignapp;user=root;password=sql123";
             con = new MySql.Data.MySqlClient.MySqlConnection();
             con.ConnectionString = mycon;
-            con.Open();
+            con.Open(); 
 
             string ExistUser = "select id,username, password from tbl_user where username ='" + ObjModel.Name + "' and password='" + ObjModel.password + "'";
             MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(ExistUser, con);
